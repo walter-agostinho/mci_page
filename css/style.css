@@ -1,20 +1,21 @@
 :root {
     --primary-color: #15253f;
     --secondary-color: #b79f6f;
-    --accent-color: #f3e0a8;
+    --secondary-color-2: #f3e0a8;
 }
 
 body {
-    margin: 0;
-    font-family: 'Palatino Linotype', serif;
+    margin: 0px;
     color: var(--primary-color);
+    background-color: var(--primary-color);
 }
 
 header {
     text-align: center;
+    font-family: 'Palatino Linotype', "sans-serif";
     padding: 10px;
     background-color: var(--primary-color);
-    color: var(--accent-color);
+    color: var(--secondary-color-2);
 }
 
 .container {
@@ -24,23 +25,55 @@ header {
 }
 
 section {
-    margin-bottom: 40px;
+    background-color: #fff; 
+    border: 2px solid var(--primary-color); 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 6px #f3e0a880;
+    margin-bottom: 20px;
+    max-width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.content {
+    background-color: black; /* Fundo preto */
+    color: white; /* Texto branco */
+    padding: 10px 20px; /* Espaçamento interno do texto */
+    border: 2px solid var(--primary-color); /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+    display: inline-block; /* Para ajustar o tamanho ao conteúdo */
+    margin: 20px; /* Centraliza horizontalmente e adiciona espaço inferior */
+    max-width: 400px;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Palatino Linotype', "sans-serif";
     color: var(--secondary-color);
     text-align: center;
     margin-bottom: 20px;
 }
 
 p {
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .contact-btn {
     display: inline-block;
-    background-color: var(--secondary-color);
+    background-color: #2B3;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -58,12 +91,12 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: var(--primary-color);
-    color: var(--accent-color);
+    color: var(--secondary-color-2);
 }
 
 .image1 {
     display: block; 
-    margin: 0 auto 5px; 
+    margin: 0 auto; 
     max-width: 150px; 
     height: auto;
 }
