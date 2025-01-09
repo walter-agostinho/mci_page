@@ -35,10 +35,19 @@ section {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.call {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    gap: 10px; 
 }
 
 .section-title {
     text-align: center;
+    color: var(--secondary-color);
 }
 
 .content-wrapper{
@@ -48,23 +57,49 @@ section {
     justify-content: center;
 }
 
+.content-wrapper.specialist{
+    align-items: flex-start; 
+    gap: 15px; 
+}
+
 .content {
-    background-color: black; /* Fundo preto */
-    color: white; /* Texto branco */
-    padding: 10px 20px; /* Espaçamento interno do texto */
-    border: 2px solid var(--primary-color); /* Borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    text-align: center; /* Centraliza o texto */
-    display: inline-block; /* Para ajustar o tamanho ao conteúdo */
-    margin: 20px; /* Centraliza horizontalmente e adiciona espaço inferior */
+    background-color: black; 
+    color: white; 
+    padding: 10px 20px; 
+    border: 2px solid var(--primary-color); 
+    border-radius: 5px; 
+    text-align: center; 
+    display: inline-block; 
+    margin: 20px; 
     max-width: 400px;
 }
 
-h2 {
-    font-family: 'Palatino Linotype', "sans-serif";
-    color: var(--secondary-color);
+.content.specialist {
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+}
+
+.specialist-img-wrapper {
+    border: 2px solid #f3e0a880; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: left;
+}
+
+.specialist-info {
+    display: flex;
+    flex-direction: column; /* Empilha o título e a descrição */
     text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: var(--secondary-color);
     margin-bottom: 20px;
+}
+
+.align-left {
+    text-align: left;
 }
 
 p {
@@ -77,6 +112,7 @@ p {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -87,6 +123,10 @@ p {
     background-color: var(--primary-color);
 }
 
+.contact-info{
+    text-align: left;
+}
+
 footer {
     text-align: center;
     padding: 10px;
@@ -94,9 +134,38 @@ footer {
     color: var(--secondary-color-2);
 }
 
-.image1 {
+.logo {
     display: block; 
     margin: 0 auto; 
     max-width: 150px; 
     height: auto;
+}
+
+.specialist-img {
+    display: inline;
+    text-align: left;
+    margin: 0 auto; 
+    max-width: 150px; 
+    height: auto;
+}
+
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #2B3;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.download-btn:hover {
+    background-color: var(--primary-color);
+}
+
+.download-btn i {
+    margin-right: 10px;
+    font-size: 1.5em;
 }
