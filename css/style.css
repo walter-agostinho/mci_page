@@ -58,8 +58,7 @@ section {
 }
 
 .content-wrapper.specialist{
-    align-items: flex-start; 
-    gap: 15px; 
+    gap: 15px;
 }
 
 .content {
@@ -76,19 +75,22 @@ section {
 
 .content.specialist {
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
     gap: 20px;
     max-width: 900px;
 }
 
 .specialist-img-wrapper {
-    border: 2px solid #f3e0a880; /* Borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    text-align: left;
+    border: 2px solid #f3e0a880;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .specialist-info {
     display: flex;
-    flex-direction: column; /* Empilha o título e a descrição */
+    flex-direction: column;
     text-align: center;
 }
 
@@ -142,11 +144,10 @@ footer {
 }
 
 .specialist-img {
-    display: inline;
-    text-align: left;
+    display: block;
+    text-align: center;
     margin: 0 auto; 
     max-width: 150px; 
-    height: auto;
 }
 
 
